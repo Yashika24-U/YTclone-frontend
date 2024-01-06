@@ -59,7 +59,7 @@ const Card = ({ type, video }) => {
 
   useEffect(() => {
     const fetchChannel = async () => {
-      const res = await axios.get(`/users/find/${video.userId}`);
+      const res = await axios.get(`https://yt-ywws.onrender.com/api/users/find/${video.userId}`);
       // console.log(res.data)
       setChannel(res.data);
     };

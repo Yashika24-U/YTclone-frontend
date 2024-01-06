@@ -88,7 +88,7 @@ const Navbar = () => {
       <Wrapper>
         <Search>
           <Input placeholder="Search" onChange={(e)=>setQ(e.target.value)} />
-          <SearchOutlinedIcon onClick = {()=>navigate(`/search ? q = ${q}`)} />
+          <SearchOutlinedIcon onClick = {()=>navigate(`https://yt-ywws.onrender.com/api/search?q=${q}`)} />
         </Search>
         {currentUser ? (
           <User>
